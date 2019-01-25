@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karla Machado Atelier de Decoração</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="LogoByRaqFil.png" id="hardwork">
+        <section>
+            <header>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li>
+                        <a class="catalog" href="#">Catálogos</a>
+                        <ul>
+                            <li><a class="catalogItem" href="#">Service One</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="catalogItem" href="#">Service Two</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer">Contactos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </header>
+        </section>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <footer id="footer">
+
+        <div class="row">
+            <div class="col" id="map"></div>
+            <h1>Morada</h1>
+            <p>Rua Hospital nº369, 4535-466 São Paio de Oleiros</p>
+            <h3>Contacto</h3>
+            <p id="info">Telemovel: 967045329</p>
+            <p id="info">Telefone: 220995809</p>
+            <p id="info">Email: geral@karlamachado.pt</p>
+            <a href="https://www.instagram.com/karlamachado_atelier"><i href="" id="info" class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/karlamachadoatelier"><i id="info2" class="fab fa-facebook"></i></a>
+
+
+
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGwztOK30isGyrpTIEkH7dYJa_tYSDd0I&callback=initMap">
+</script>
+<script>
+    function initMap() {
+        // The location of Uluru
+        var local = {
+            lat: 40.983608,
+            lng: -8.603672
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 18,
+                center: local
+            });
+        // The marker, positioned at location
+        var marker = new google.maps.Marker({
+            position: local,
+            map: map
+        });
+    }
+</script>
+
+</html>
