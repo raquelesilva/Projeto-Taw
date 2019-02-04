@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karla Machado Atelier de Decoração</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="LogoByRaqFil.png" id="hardwork">
+        <section>
+            <header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a id="catalog" href="#">Catálogos</a>
+                        <ul class="dropdown">
+
+                            <li><a class="catalogItem" href="#">Estores</a></li>
+
+                            <li><a class="catalogItem" href="#">Tecidos</a></li>
+
+                            <li><a class="catalogItem" href="#">Cortinados</a></li>
+
+                            <li><a class="catalogItem" href="#">Estofos/Outros</a></li>
+
+                            <li><a class="catalogItem" href="#">Papel de Parede</a></li>
+
+                            <li><a class="catalogItem" href="#">Tapetes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer">Contactos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </header>
+        </section>
+       
+    </div>
+    <div class="fond"> <span class="s1"></span><span class="s2"></span></div>
+<div class="card" id="card1">
+  <div class="thumbnail"><img class="left" src="IMG_4224.jpg"/></div>
+  <div class="right">
+    <h1>Como comecei este longo caminho</h1>
+    <div class="author"><img src="karla1.jpg"/>
+      <h2>Carla Machado</h2>
+    </div>
+    <div class="separator"></div>
+    <p id="infoCenas">Devido à minha paixão por criar e inventar tudo o que diz respeito à decoração da casa, decidi seguir em frente com a 'Karla Machado Atelier de Decoração'.  Após a minha chegada a Portugal, em 1994, e com um conhecimento medíocre da nossa língua natal a nível da minha profissão (contabilista), a 'Karla Machado Atelier de Decoração' começou como um passatempo, devido a me encontrar num país novo e diferente, onde não tinha grandes conhecimentos. A decoração da minha casa é toda criada e confecionada por mim e quem teve a oportunidade de ver, gostou e recomendou.<!-- O resto já devem saber. Palavra passa palavra e as recomendações não param. Em 2002, abri a minha primeira loja, pois necessitava de um espaço com showroom e atelier. Agora, passados mais de 20 anos, continuamos a satisfazer os mais diversos pedidos de clientes de todo o país e não só.--></p>
+  </div>
+  <h5>24</h5>
+  <h6>MAIO</h6>
+ 
+  <div class="fab2"><i class="fa fa-arrow-down fa-3x"> </i></div>
+ 
+</div>
+
+<section id="tamanho">
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#card1">1</a>
+        <a href="#">2</a>
+        <a href="#">&raquo;</a>
+      </div>
+</section>
+
+<div>
+    <footer id="footer">
+
+        <div class="row">
+            <div class="col" id="map"></div>
+            <h1>Morada</h1>
+            <p><i class="fas fa-building"> Rua Hospital nº369, 4535-466 São Paio de Oleiros</i></p>
+            <h3>Contacto</h3>
+            <p id="info"> <i class="fas fa-mobile-alt"> Telemovel: 967045329</i></p>
+            <p id="info"><i class="fas fa-phone"> Telefone: 220995809</i></p>
+            <p id="info"><i class="fas fa-envelope"> Email: geral@karlamachado.pt</i></p>
+            <a href="https://www.instagram.com/karlamachado_atelier"><i href="" id="info" class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/karlamachadoatelier"><i id="info2" class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGwztOK30isGyrpTIEkH7dYJa_tYSDd0I&callback=initMap">
+</script>
+<script>
+    function initMap() {
+        // The location of Uluru
+        var local = {
+            lat: 40.983608,
+            lng: -8.603672
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 18,
+                center: local
+            });
+        // The marker, positioned at location
+        var marker = new google.maps.Marker({
+            position: local,
+            map: map
+        });
+    }
+</script>
+<script src="index.js"></script>
+</html>

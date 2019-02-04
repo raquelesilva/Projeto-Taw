@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <script src="index.js"></script>
+        
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -22,15 +23,22 @@
         <section>
             <header>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li>
-                        <a class="catalog" href="#">Catálogos</a>
-                        <ul>
-                            <li><a class="catalogItem" href="#">Service One</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="catalogItem" href="#">Service Two</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projectPage.html">Projetos</a></li>
+                    <li><a id="catalog" href="#">Catálogos</a>
+                        <ul class="dropdown">
+
+                            <li><a class="catalogItem" href="#">Estores</a></li>
+
+                            <li><a class="catalogItem" href="#">Tecidos</a></li>
+
+                            <li><a class="catalogItem" href="#">Cortinados</a></li>
+
+                            <li><a class="catalogItem" href="#">Estofos/Outros</a></li>
+
+                            <li><a class="catalogItem" href="#">Papel de Parede</a></li>
+
+                            <li><a class="catalogItem" href="#">Tapetes</a></li>
                         </ul>
                     </li>
                     <li><a href="#footer">Contactos</a></li>
@@ -38,9 +46,9 @@
                     <li><a href="#">Login</a></li>
                 </ul>
             </header>
-        </section>
+        </section>   
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container">\
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
             <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
@@ -56,21 +64,19 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+    
     <footer id="footer">
 
         <div class="row">
             <div class="col" id="map"></div>
             <h1>Morada</h1>
-            <p>Rua Hospital nº369, 4535-466 São Paio de Oleiros</p>
+            <p><i class="fas fa-building"> Rua Hospital nº369, 4535-466 São Paio de Oleiros</i></p>
             <h3>Contacto</h3>
-            <p id="info">Telemovel: 967045329</p>
-            <p id="info">Telefone: 220995809</p>
-            <p id="info">Email: geral@karlamachado.pt</p>
+            <p id="info"> <i class="fas fa-mobile-alt"> Telemovel: 967045329</i></p>
+            <p id="info"><i class="fas fa-phone"> Telefone: 220995809</i></p>
+            <p id="info"><i class="fas fa-envelope"> Email: geral@karlamachado.pt</i></p>
             <a href="https://www.instagram.com/karlamachado_atelier"><i href="" id="info" class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/karlamachadoatelier"><i id="info2" class="fab fa-facebook"></i></a>
-
-
-
         </div>
     </footer>
 
@@ -99,5 +105,5 @@
         });
     }
 </script>
-
+<script src="index.js"></script>
 </html>
